@@ -1,0 +1,150 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- using the audio tag (multimedia) -->
+    <h1>Use of audio tag relative and absolute links</h1>
+    <!-- using absolute link -->
+    <!-- for using absolute link follow simple steps are like 1-open the free source website as written in notebook and then right click anywhere in the website 2-inspect choose network and then go to media and then select the particular ringtone/audio and then copy that link in the network section with.mp3 link here  -->
+    <audio controls>
+      <source
+        src="https://cdn.pixabay.com/audio/2026/02/06/audio_f9c8b8c8ed.mp3"
+        type="audio/mpeg"
+      />
+    </audio>
+    <br />
+    <audio controls>
+      <source
+        src="https://cdn.pixabay.com/audio/2026/08/01/audio_c24e37558f.mp3"
+        type="audio/mpeg"
+      />
+    </audio>
+    <br />
+    <audio controls>
+      <source
+        src="https://cdn.pixabay.com/audio/2026/09/25/audio_4be18909e0.mp3"
+        type="audio/mpeg"
+      />
+    </audio>
+    <!-- using the audio by downloadin it to the audio folder a sub folder of the learning html myself file in which i am doing file work -->
+    <h1>Using the audio file by the help of the downloading</h1>
+    <audio controls>
+      <source src="audio/audio1test.mp3" type="audio/mpeg" />
+    </audio>
+    <!-- so in audios we can do the things like that ok -->
+    <h1>Now the video tag</h1>
+    <!-- in video tag we also give attributes like width ,height postersfor thumbnail 
+ all other things are same as audio source type(attribute of the source) -->
+    <!-- for reative path -->
+    <video controls>
+      <source
+        src="https://cdn.pixabay.com/video/2026/10/13/382351_tiny.mp4"
+        type="video/mp4"
+      />
+    </video>
+    <br />
+    <video width="500" controls>
+      <source
+        src="https://cdn.pixabay.com/video/2026/10/13/382352_large.mp4"
+        type="video/mp4"
+      />
+    </video>
+    <!-- for the video links direct from any website you only need to do one thing which is that 1- inspect 2- network 3-refresh if you want 4- click the video and filter and search for .mp4 it shows the link in the panel and then copy it  -->
+    <video controls width="500">
+      <source
+        src="https://cdn.pixabay.com/video/2024/07/29/223714_large.mp4"
+        type="video/mp4"
+      />
+    </video>
+    <h1>so here using posters and the thumbnails in the the videos ok</h1>
+    <!-- using thumbnail direct from the google ,images,right click on the image and then choose copy image address  -->
+    <video
+      controls
+      width="500"
+      poster="https://img.magnific.com/free-photo/closeup-shot-beautiful-butterfly-with-interesting-textures-orange-petaled-flower_181624-7640.jpg?semt=ais_hybrid&w=740&q=80"
+    >
+      <source
+        src="https://cdn.pixabay.com/video/2016/06/29/3654-173062443_large.mp4"
+        type="video/mp4"
+      />
+    </video>
+    <br />
+    <!-- for thumbnail(poster)we can also use direct and the download link  -->
+    <!-- downloaded thumbnail using -->
+    <video controls width="500" height="500" poster="images/image3.jpg">
+      <source
+        src="https://cdn.pixabay.com/video/2026/10/13/382354_large.mp4"
+        type="video/mp4"
+      />
+    </video>
+    <!-- now using the iframe ok in different parameters -->
+    <!-- for using the links in the iframe we can use so many types of the links like poscast music  from spotify and from youtube from anywhere it doesn't need to we in the file extension formates  -->
+    <!-- we give title in the iframe -->
+     <!-- we cannot use the control attribute in the iframe ok -->
+     <br>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/jfjXJpUNayg?si=tVimqpLHIVmWMUXn" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    </iframe>
+
+    <iframe
+      data-testid="embed-iframe"
+      style="border-radius: 12px"
+      src="https://open.spotify.com/embed/track/2gkVEnpahpE3bQuvGuCpAV?utm_source=generator&si=332d1777ee534f6c"
+      width="100%"
+      height="352"
+      frameborder="0"
+      allowfullscreen=""
+      allow="
+        autoplay;
+        clipboard-write;
+        encrypted-media;
+        fullscreen;
+        picture-in-picture;
+      "
+      loading="lazy"
+    ></iframe>
+    <!-- for using iframe write all the atttibute but for the src type excatly  like that just add the id of that video ok -->
+<iframe width="500" height="700" src="https://youtube.com/embed/jfjXJpUNayg" frameborder="0" allowfullscreen></iframe>
+<!-- 1.acceleratometer
+• What it means: This grants the video player permission to access your device's physical motion and tilt sensors.
+• Why YouTube uses it: It allows the player to detect if you rotate your phone or tablet, so it can automatically switch the video between portrait and landscape viewports.
+
+2. autoplay
+
+• What it means: This gives the video permission to start playing automatically as soon as the webpage finishes loading.
+• Why YouTube uses it: If you add &autoplay=1 to your video URL, the browser needs this permission enabled to actually let the video play without the user needing to click the "Play" button first.
+
+3. clipboard-write
+
+• What it means: This allows the embedded player to write text data directly to your device's clipboard (the temporary storage used when you copy something).
+• Why YouTube uses it: When a user clicks the "Share" or "Copy Link" button inside the embedded YouTube player, this permission is what allows the player to successfully copy the video link to their phone or computer clipboard.
+
+4. encrypted-media
+
+• What it means: This allows the player to use DRM (Digital Rights Management) and cryptographic protocols to play protected video streams.
+• Why YouTube uses it: Many high-quality, commercial, or copyrighted videos on YouTube require secure, encrypted streaming to prevent piracy. Without this, some music videos or premium content might refuse to load and throw an error.
+
+5. gyroscope
+
+• What it means: Similar to the accelerometer, this grants access to your device's angular velocity and rotation sensors.
+• Why YouTube uses it: This is absolutely essential for 360-degree videos or Virtual Reality (VR) content on YouTube. It allows a mobile user to physically move their phone around to "look around" the scene inside the video.
+
+6. picture-in-picture
+
+• What it means: This permits the video player to separate the video track from the webpage into a small, floating window.
+• Why YouTube uses it: It allows users to hit the picture-in-picture button so they can keep watching the video in a floating corner box while they scroll down your website or switch to a completely different browser tab. -->
+<br>
+<iframe width="500" height="600" src="https://youtube.com/embed/MUVZKF_Ykl4" title="youtube video" frameborder="2" allow="picture-to-picture;accelerometer;autoplay;clipboard-write;encrypted-media;gyroscope" allowfullscreen></iframe>
+<!-- iframe is an inline element as name is inline frame  -->
+ <br>
+<iframe width="500" height="600" src="https://youtube.com/embed/36CcnThN_kw" title="youtube video" frameborder="0" allow="picture-to-picture;autoplay;encrypted-media;accelerometer;gyroscope;clipboard-write" allowfullscreen></iframe>
+
+
+
+
+
+  </body>
+</html>
